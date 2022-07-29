@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"blk_mem_gen_7": {
+			"proto_instances": {
+			}
+		}
+	}
+}

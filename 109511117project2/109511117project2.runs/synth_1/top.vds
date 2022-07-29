@@ -1,0 +1,453 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun 23 20:36:10 2021
+# Process ID: 17600
+# Current directory: C:/FPGA/109511117project2/109511117project2.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/FPGA/109511117project2/109511117project2.runs/synth_1/top.vds
+# Journal file: C:/FPGA/109511117project2/109511117project2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13372
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'VGA1024x768' [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/VGA1024x768.v:3]
+	Parameter HS_STA bound to: 24 - type: integer 
+	Parameter HS_END bound to: 160 - type: integer 
+	Parameter HA_STA bound to: 320 - type: integer 
+	Parameter VS_STA bound to: 771 - type: integer 
+	Parameter VS_END bound to: 777 - type: integer 
+	Parameter VA_END bound to: 768 - type: integer 
+	Parameter LINE bound to: 1344 - type: integer 
+	Parameter SCREEN bound to: 806 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VGA1024x768' (1#1) [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/VGA1024x768.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_5' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_5' (2#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_6' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_6' (3#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_6_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_7' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_7' (4#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_7_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'state1' [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (5#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_8' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_8' (6#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (7#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_2_stub.v:6]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:174]
+WARNING: [Synth 8-6090] variable 'Arr_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:177]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:183]
+WARNING: [Synth 8-6090] variable 'Arr_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:184]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_9' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_9_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_9' (8#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_9_stub.v:6]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:263]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:265]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:272]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:274]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:276]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:278]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:280]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:263]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:265]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:272]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:274]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:276]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:278]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:280]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:263]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:265]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:272]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:274]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:276]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:278]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:280]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:263]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:265]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:272]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:274]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:276]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:278]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:280]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:263]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:265]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:272]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:274]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:276]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:278]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:280]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:263]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:265]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:272]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:274]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:276]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:278]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:280]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:263]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:265]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:272]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:274]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:276]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:278]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:280]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:263]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:265]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:272]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:274]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:276]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:278]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:280]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:263]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_enable' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:265]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:272]
+WARNING: [Synth 8-6090] variable 'Wm_Bu_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:274]
+INFO: [Common 17-14] Message 'Synth 8-6090' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'state1' (9#1) [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'state2' [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state2.v:3]
+	Parameter seed bound to: 8'b11111111 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_3' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_3' (10#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (11#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state2.v:207]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_4' [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_4' (12#1) [C:/FPGA/109511117project2/109511117project2.runs/synth_1/.Xil/Vivado-17600-MyNot3800k/realtime/blk_mem_gen_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'state2' (13#1) [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/state2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'color' [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/color.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'color' (14#1) [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/color.v:3]
+WARNING: [Synth 8-567] referenced signal 'count' should be on the sensitivity list [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/top.v:235]
+WARNING: [Synth 8-567] referenced signal 'F4' should be on the sensitivity list [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/top.v:235]
+WARNING: [Synth 8-567] referenced signal 'E4' should be on the sensitivity list [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/top.v:235]
+WARNING: [Synth 8-567] referenced signal 'G4' should be on the sensitivity list [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/top.v:235]
+WARNING: [Synth 8-567] referenced signal 'A4' should be on the sensitivity list [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/top.v:235]
+WARNING: [Synth 8-567] referenced signal 'C4' should be on the sensitivity list [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/top.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [C:/FPGA/109511117project2/109511117project2.srcs/sources_1/new/top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.762 ; gain = 10.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1025.223 ; gain = 10.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1025.223 ; gain = 10.586
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1025.223 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'STATE_2/Money'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'STATE_2/Money'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'STATE_1/man'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'STATE_1/man'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'STATE_2/man'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'STATE_2/man'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'STATE_1/Arrow'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'STATE_1/Arrow'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'STATE_2/Mother'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'STATE_2/Mother'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'STATE_2/Knife'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'STATE_2/Knife'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5/blk_mem_gen_5_in_context.xdc] for cell 'start'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5/blk_mem_gen_5_in_context.xdc] for cell 'start'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6/blk_mem_gen_6_in_context.xdc] for cell 'win'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6/blk_mem_gen_6_in_context.xdc] for cell 'win'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7/blk_mem_gen_7_in_context.xdc] for cell 'lose'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7/blk_mem_gen_7_in_context.xdc] for cell 'lose'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8/blk_mem_gen_8_in_context.xdc] for cell 'STATE_1/woman'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8/blk_mem_gen_8_in_context.xdc] for cell 'STATE_1/woman'
+Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_9/blk_mem_gen_9/blk_mem_gen_9_in_context.xdc] for cell 'STATE_1/Wm_Bu'
+Finished Parsing XDC File [c:/FPGA/109511117project2/109511117project2.gen/sources_1/ip/blk_mem_gen_9/blk_mem_gen_9/blk_mem_gen_9_in_context.xdc] for cell 'STATE_1/Wm_Bu'
+Parsing XDC File [C:/FPGA/109511117project2/109511117project2.srcs/constrs_1/new/final_project.xdc]
+Finished Parsing XDC File [C:/FPGA/109511117project2/109511117project2.srcs/constrs_1/new/final_project.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/FPGA/109511117project2/109511117project2.srcs/constrs_1/new/final_project.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1155.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1155.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1155.340 ; gain = 140.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1155.340 ; gain = 140.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for STATE_2/Money. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for STATE_1/man. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for STATE_2/man. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for STATE_1/Arrow. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for STATE_2/Mother. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for STATE_2/Knife. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for start. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for win. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for lose. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for STATE_1/woman. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for STATE_1/Wm_Bu. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1155.340 ; gain = 140.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1155.340 ; gain = 140.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   49 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 19    
+	   3 Input   32 Bit       Adders := 5     
+	   2 Input   21 Bit       Adders := 5     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 150   
+	   2 Input   11 Bit       Adders := 60    
+	   3 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 19    
+	   3 Input    8 Bit       Adders := 7     
+	   2 Input    7 Bit       Adders := 18    
+	   3 Input    7 Bit       Adders := 4     
+	   3 Input    6 Bit       Adders := 4     
+	   3 Input    5 Bit       Adders := 3     
+	   2 Input    1 Bit       Adders := 5     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	               21 Bit    Registers := 5     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 3     
+	               12 Bit    Registers := 7     
+	               11 Bit    Registers := 90    
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 49    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   21 Bit        Muxes := 5     
+	   7 Input   12 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 161   
+	   6 Input   12 Bit        Muxes := 2     
+	   3 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 69    
+	   3 Input   11 Bit        Muxes := 1     
+	   8 Input   11 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 43    
+	   2 Input    7 Bit        Muxes := 36    
+	   2 Input    3 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 279   
+	   4 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 2     
+	  57 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1207.324 ; gain = 192.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1207.324 ; gain = 192.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1207.324 ; gain = 192.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1257.160 ; gain = 242.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1271.516 ; gain = 256.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1271.516 ; gain = 256.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1271.516 ; gain = 256.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1271.516 ; gain = 256.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1271.516 ; gain = 256.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1271.516 ; gain = 256.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_5 |         1|
+|2     |blk_mem_gen_6 |         1|
+|3     |blk_mem_gen_7 |         1|
+|4     |blk_mem_gen_1 |         2|
+|5     |blk_mem_gen_8 |         1|
+|6     |blk_mem_gen_2 |         1|
+|7     |blk_mem_gen_9 |         1|
+|8     |blk_mem_gen_3 |         1|
+|9     |blk_mem_gen_0 |         1|
+|10    |blk_mem_gen_4 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |blk_mem_gen    |     2|
+|3     |blk_mem_gen_1_ |     1|
+|4     |blk_mem_gen    |     8|
+|12    |BUFG           |     6|
+|13    |CARRY4         |  1085|
+|14    |LUT1           |   323|
+|15    |LUT2           |  1166|
+|16    |LUT3           |   501|
+|17    |LUT4           |  2985|
+|18    |LUT5           |  1519|
+|19    |LUT6           |  2466|
+|20    |MUXF7          |     2|
+|21    |FDRE           |  1616|
+|22    |FDSE           |    37|
+|23    |IBUF           |     7|
+|24    |OBUF           |    15|
+|25    |OBUFT          |     1|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1271.516 ; gain = 256.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 1271.516 ; gain = 126.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1271.516 ; gain = 256.879
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 1271.516 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1087 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1271.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1271.516 ; gain = 256.879
+INFO: [Common 17-1381] The checkpoint 'C:/FPGA/109511117project2/109511117project2.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 23 20:37:27 2021...

@@ -1,0 +1,199 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Jun 23 20:38:29 2021
+| Host         : MyNot3800k running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   121 |
+|    Minimum number of control sets                        |   121 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   541 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   121 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |    92 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     4 |
+| >= 16              |    18 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             212 |           98 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             330 |          149 |
+| Yes          | No                    | No                     |             142 |           61 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1055 |          454 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------+---------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |           Enable Signal           |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-----------------------------------+---------------------------------+------------------+----------------+--------------+
+|  En_CLK        | STATE_2/bcounter[31]_i_1_n_0      |                                 |                1 |              1 |         1.00 |
+|  En_CLK        |                                   |                                 |                2 |              3 |         1.50 |
+|  o_clk         |                                   |                                 |                2 |              4 |         2.00 |
+|  o_clk         |                                   | count[6]_i_1_n_0                |                2 |              4 |         2.00 |
+|  En_CLK        | STATE_2/rand_num                  | STATE_2/Man_top0                |                1 |              8 |         8.00 |
+|  pix_CLK_BUFG  |                                   | STATE_1/Addr_Wm_Bu[9]_i_1_n_0   |                4 |             10 |         2.50 |
+|  STATE_1/clk   | STATE_1/Man_left[10]_i_1_n_0      | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  STATE_1/clk   | STATE_1/Man_top[10]_i_1_n_0       | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Arr_top[0][10]_i_1_n_0    | STATE_1/Man_top0                |                8 |             11 |         1.38 |
+|  CLK_Scan      | STATE_2/Man_left[10]_i_1__0_n_0   | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  CLK_Scan      | STATE_2/Money_en                  | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  CLK_Scan      | STATE_2/Man_top[10]_i_1__0_n_0    | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  CLK_Scan      | STATE_2/Money_left[0][10]_i_1_n_0 | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  CLK_Scan      | STATE_2/Money_left                | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  CLK_Scan      | STATE_2/Money_left[1][10]_i_1_n_0 | STATE_2/Man_top0                |                7 |             11 |         1.57 |
+|  CLK_Scan      | STATE_2/Money_left[2][10]_i_1_n_0 | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  CLK_Scan      | STATE_2/Money_left[3][10]_i_1_n_0 | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  CLK_Scan      | STATE_2/Money_left[4][10]_i_1_n_0 | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  CLK_Scan      | STATE_2/Money_left[5][10]_i_1_n_0 | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  CLK_Scan      | STATE_2/Money_left[6][10]_i_1_n_0 | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  CLK_Scan      | STATE_2/Money_left[7][10]_i_1_n_0 | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  CLK_Scan      | STATE_2/Money_left[8][10]_i_1_n_0 | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  CLK_Scan      | STATE_2/Money_top[0][10]_i_1_n_0  | STATE_2/Man_top0                |                7 |             11 |         1.57 |
+|  CLK_Scan      | STATE_2/Money_top[1][10]_i_1_n_0  | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  CLK_Scan      | STATE_2/Money_top[7][10]_i_1_n_0  | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  CLK_Scan      | STATE_2/Money_top[6][10]_i_1_n_0  | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  CLK_Scan      | STATE_2/Money_top[3][10]_i_1_n_0  | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  CLK_Scan      | STATE_2/Money_top[4][10]_i_1_n_0  | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  CLK_Scan      | STATE_2/Money_top[8][10]_i_1_n_0  | STATE_2/Man_top0                |                7 |             11 |         1.57 |
+|  CLK_Scan      | STATE_2/Money_top[2][10]_i_1_n_0  | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  CLK_Scan      | STATE_2/Money_top[5][10]_i_1_n_0  | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Arr_top[1][10]_i_1_n_0    | STATE_1/Man_top0                |                6 |             11 |         1.83 |
+|  Wm_CLK        | STATE_1/Arr_top[3][10]_i_1_n_0    | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  En_Bu_CLK     | STATE_2/Knife_top[2][10]_i_1_n_0  | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  En_Bu_CLK     | STATE_2/Knife_top[1][10]_i_1_n_0  | STATE_2/Man_top0                |                7 |             11 |         1.57 |
+|  En_Bu_CLK     | STATE_2/Knife_top                 | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  En_Bu_CLK     | STATE_2/Knife_top[3][10]_i_1_n_0  | STATE_2/Man_top0                |                7 |             11 |         1.57 |
+|  En_Bu_CLK     | STATE_2/Knife_top[8][10]_i_1_n_0  | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  En_Bu_CLK     | STATE_2/Knife_top[6][10]_i_1_n_0  | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  En_Bu_CLK     | STATE_2/Knife_top[9][10]_i_1_n_0  | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  En_Bu_CLK     | STATE_2/Knife_top[4][10]_i_1_n_0  | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  En_Bu_CLK     | STATE_2/Knife_top[5][10]_i_1_n_0  | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  En_Bu_CLK     | STATE_2/Knife_top[7][10]_i_1_n_0  | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  En_Bu_CLK     | STATE_2/Knife_left[9][10]_i_1_n_0 | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  En_Bu_CLK     | STATE_2/Knife_left                | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  En_Bu_CLK     | STATE_2/Knife_left[1][10]_i_1_n_0 | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  En_Bu_CLK     | STATE_2/Knife_left[2][10]_i_1_n_0 | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  En_Bu_CLK     | STATE_2/Knife_left[3][10]_i_1_n_0 | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  En_Bu_CLK     | STATE_2/Knife_left[4][10]_i_1_n_0 | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  En_Bu_CLK     | STATE_2/Knife_left[5][10]_i_1_n_0 | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  En_Bu_CLK     | STATE_2/Knife_left[6][10]_i_1_n_0 | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  En_Bu_CLK     | STATE_2/Knife_left[7][10]_i_1_n_0 | STATE_2/Man_top0                |                4 |             11 |         2.75 |
+|  En_Bu_CLK     | STATE_2/Knife_left[8][10]_i_1_n_0 | STATE_2/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Arr_top[2][10]_i_1_n_0    | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  En_CLK        | STATE_2/Mother_left[10]_i_1_n_0   | STATE_2/Man_top0                |                6 |             11 |         1.83 |
+|  En_CLK        | STATE_2/Mother_top[10]_i_2_n_0    | STATE_2/Man_top0                |                8 |             11 |         1.38 |
+|  Wm_CLK        | STATE_1/Arr_top[4][10]_i_1_n_0    | STATE_1/Man_top0                |                6 |             11 |         1.83 |
+|  Wm_CLK        | STATE_1/Arr_top[5][10]_i_1_n_0    | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Arr_top[8][10]_i_1_n_0    | STATE_1/Man_top0                |                6 |             11 |         1.83 |
+|  Wm_CLK        | STATE_1/Arr_top[7][10]_i_1_n_0    | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Arr_top[6][10]_i_1_n_0    | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  CLK_IBUF_BUFG | display/v_count[10]_i_2_n_0       | display/v_count[10]_i_1_n_0     |                5 |             11 |         2.20 |
+|  CLK_IBUF_BUFG | pix_CLK_BUFG                      | display/h_count[10]_i_1_n_0     |                4 |             11 |         2.75 |
+|  pix_CLK_BUFG  |                                   | STATE_1/Addr_arr[10]_i_1_n_0    |                4 |             11 |         2.75 |
+|  pix_CLK_BUFG  |                                   | STATE_2/Addr_Knife[10]_i_1_n_0  |                4 |             11 |         2.75 |
+|  pix_CLK_BUFG  |                                   | STATE_2/Addr_Money[10]_i_1_n_0  |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top                 | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top[5][10]_i_1_n_0  | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top[2][10]_i_1_n_0  | STATE_1/Man_top0                |                6 |             11 |         1.83 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top[1][10]_i_1_n_0  | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top[4][10]_i_1_n_0  | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top[3][10]_i_1_n_0  | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top[7][10]_i_1_n_0  | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top[6][10]_i_1_n_0  | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top[9][10]_i_1_n_0  | STATE_1/Man_top0                |                3 |             11 |         3.67 |
+|  Wm_CLK        | STATE_1/Wm_Bu_top[8][10]_i_1_n_0  | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Arr_left[3][10]_i_1_n_0   | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left                | STATE_1/Man_top0                |                2 |             11 |         5.50 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left[1][10]_i_1_n_0 | STATE_1/Man_top0                |                3 |             11 |         3.67 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left[2][10]_i_1_n_0 | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left[3][10]_i_1_n_0 | STATE_1/Man_top0                |                2 |             11 |         5.50 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left[4][10]_i_1_n_0 | STATE_1/Man_top0                |                3 |             11 |         3.67 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left[5][10]_i_1_n_0 | STATE_1/Man_top0                |                2 |             11 |         5.50 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left[6][10]_i_1_n_0 | STATE_1/Man_top0                |                3 |             11 |         3.67 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left[7][10]_i_1_n_0 | STATE_1/Man_top0                |                2 |             11 |         5.50 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left[8][10]_i_1_n_0 | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Wm_Bu_left[9][10]_i_1_n_0 | STATE_1/Man_top0                |                3 |             11 |         3.67 |
+|  Wm_CLK        | STATE_1/Arr_enable                | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Arr_left                  | STATE_1/Man_top0                |                6 |             11 |         1.83 |
+|  Wm_CLK        | STATE_1/Arr_left[1][10]_i_1_n_0   | STATE_1/Man_top0                |                6 |             11 |         1.83 |
+|  Wm_CLK        | STATE_1/Arr_left[2][10]_i_1_n_0   | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Arr_left[4][10]_i_1_n_0   | STATE_1/Man_top0                |                6 |             11 |         1.83 |
+|  Wm_CLK        | STATE_1/Arr_left[5][10]_i_1_n_0   | STATE_1/Man_top0                |                5 |             11 |         2.20 |
+|  Wm_CLK        | STATE_1/Arr_left[6][10]_i_1_n_0   | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Arr_left[7][10]_i_1_n_0   | STATE_1/Man_top0                |                4 |             11 |         2.75 |
+|  Wm_CLK        | STATE_1/Arr_left[8][10]_i_1_n_0   | STATE_1/Man_top0                |                3 |             11 |         3.67 |
+|  Wm_CLK        | STATE_1/Arr_left[9][10]_i_1_n_0   | STATE_1/Man_top0                |                6 |             11 |         1.83 |
+|  pix_CLK_BUFG  |                                   | color/SR[0]                     |                4 |             12 |         3.00 |
+|  pix_CLK_BUFG  | vga_out[11]_i_1__1_n_0            |                                 |                5 |             12 |         2.40 |
+|  pix_CLK_BUFG  |                                   | STATE_1/Addr_man[13]_i_1__0_n_0 |                6 |             14 |         2.33 |
+|  pix_CLK_BUFG  |                                   | STATE_1/Addr_Wm[13]_i_1_n_0     |                5 |             14 |         2.80 |
+|  pix_CLK_BUFG  |                                   | STATE_2/Addr_man[13]_i_1_n_0    |                6 |             14 |         2.33 |
+|  pix_CLK_BUFG  |                                   | STATE_2/RSTP                    |                5 |             15 |         3.00 |
+|  pix_CLK_BUFG  | RST_BTN_IBUF                      | color/SR[0]                     |               10 |             16 |         1.60 |
+|  pix_CLK_BUFG  |                                   | STATE_1/Man_top0                |               11 |             16 |         1.45 |
+|  pix_CLK_BUFG  |                                   | STATE_2/Man_top0                |               11 |             16 |         1.45 |
+|  En_Bu_CLK     |                                   | STATE_2/Man_top0                |               14 |             17 |         1.21 |
+|  CLK_Scan      |                                   | STATE_2/Man_top0                |               12 |             18 |         1.50 |
+|  CLK_IBUF_BUFG |                                   | fq4[20]_i_1_n_0                 |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG |                                   | fq3[20]_i_1_n_0                 |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG |                                   | fq1[20]_i_1_n_0                 |                6 |             21 |         3.50 |
+|  CLK_IBUF_BUFG |                                   | fq5[20]_i_1_n_0                 |                6 |             21 |         3.50 |
+|  CLK_IBUF_BUFG |                                   | fq6[20]_i_1_n_0                 |                6 |             21 |         3.50 |
+|  En_CLK        | STATE_2/bcounter[31]_i_1_n_0      | STATE_2/rcnt[31]_i_1_n_0        |                8 |             31 |         3.88 |
+|  CLK_Scan      | STATE_2/bcounter[31]_i_1_n_0      |                                 |               12 |             32 |         2.67 |
+|  En_Bu_CLK     | STATE_2/bcounter[31]_i_1_n_0      |                                 |               17 |             32 |         1.88 |
+|  En_CLK        | STATE_2/bcounter[31]_i_1_n_0      | STATE_2/Mother_cnt              |                8 |             32 |         4.00 |
+|  Wm_CLK        |                                   | STATE_1/Man_top0                |               29 |             44 |         1.52 |
+|  Wm_CLK        | STATE_1/bcounter[31]_i_1__0_n_0   |                                 |               26 |             65 |         2.50 |
+|  pix_CLK_BUFG  |                                   |                                 |               63 |             93 |         1.48 |
+|  CLK_IBUF_BUFG |                                   |                                 |               31 |            112 |         3.61 |
++----------------+-----------------------------------+---------------------------------+------------------+----------------+--------------+
+
+
